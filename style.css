@@ -4,6 +4,26 @@
 
 }
 
+.core1 {
+    background-color: #E8F0E8;
+}
+
+.core2 {
+    background-color: #F9F1F1;
+}
+
+.core3 {
+    background-color: #F0F4F8;
+}
+
+.core4 {
+    background-color: #FDF8E7;
+}
+
+.core5 {
+    background-color: #F2F2F2;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -56,6 +76,7 @@ body {
     font-size: 35px;
     font-weight: normal;
     font-family: monospace;
+    text-transform: uppercase;
 }
 
 .btn-impact {
@@ -118,7 +139,7 @@ nav {
     margin: auto;
     margin-bottom: 30px;
     border-radius: 999px;
-    background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .2));
+    background: linear-gradient(to right, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4));
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, .2);
@@ -183,6 +204,13 @@ nav {
     margin-bottom: 3rem;
 }
 
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #daa520;
+    margin-bottom: 3rem;
+}
+
 .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -195,9 +223,8 @@ nav {
 
 .impact-card {
     grid-column: span 4;
-    /* Each card takes 4 columns (12/3 = 4) */
     background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(px);
     border: 1px solid rgba(0, 77, 0, 0.1);
     padding: 2.5rem;
     border-radius: 20px;
@@ -242,7 +269,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    padding: 30px;
+    padding: 0 15.33%;
     align-items: stretch;
 }
 
@@ -261,8 +288,68 @@ nav {
 
 .section-2-grid span {
     grid-column: span 7;
-    align-self: center;
+    background-color: lightcyan;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
+    align-self: stretch;
 }
+
+.mv-grid {
+    padding: 20px 15.33%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.mission-card {
+    grid-column: span 6;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.vision-card {
+    grid-column: span 6;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.core-values-container {
+    padding: 20px 15.33%;
+    text-align: center;
+}
+.core-values-container h3{
+    margin-bottom: 15px;
+}
+
+.core-values-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.core-values-grid div {
+    grid-column: span 1;
+    text-align: center;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: .3s ease;
+
+}
+
+.core-values-grid div:hover {
+    transform: translateY(10px);
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1024px) {
@@ -270,8 +357,49 @@ nav {
         font-size: 65px;
 
     }
-}
 
+    .section-2-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15.33%;
+    }
+
+    .section-2-grid div,
+    .section-2-grid span {
+        grid-column: span 1;
+        /* Both take up the full width now */
+    }
+
+    .grid-wrapper {
+        padding: 0 8.33%;
+    }
+
+    .impact-card {
+        grid-column: span 12;
+        /* On mobile, cards take full width */
+    }
+
+    .core-values-container {
+        padding: 20px 15.33%;
+    }
+
+    .core-values-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 10px;
+    }
+
+    .core-values-grid div {
+        grid-column: span 6;
+        text-align: center;
+        /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        padding: 3rem 1.5rem;
+        border-radius: 10px;
+        text-transform: uppercase;
+        transition: .3s ease;
+
+    }
+}
 
 @media (max-width: 768px) {
     .title-wrapper .title {
@@ -344,11 +472,32 @@ nav {
         grid-column: span 1;
         /* Both take up the full width now */
     }
+
+    .mv-grid {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        grid-column: span 1;
+    }
+
+    .vision-card {
+        grid-column: span 1;
+    }
+
+    .core-values-container {
+        padding: 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .title-wrapper .title {
         font-size: 30px;
 
+    }
+
+    .grid-wrapper {
+        padding: 0 2%;
     }
 }
