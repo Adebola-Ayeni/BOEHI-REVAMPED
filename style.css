@@ -437,8 +437,9 @@ nav {
 }
 
 .section-2-grid span {
+    color: #ffffff;
     grid-column: span 7;
-    background-color: lightcyan;
+    background: linear-gradient(-135deg, #001a00 0%, #004d00 30%, #006600 100%);;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
