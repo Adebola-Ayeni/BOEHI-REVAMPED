@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOEHI By Ade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Desktop Nav -->
+    <nav>
+        <div><a href="index.html"><img class="logo" src="logo.webp" alt="BOEHI Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <div><a href="index.html"><img class="logo" src="logo.webp" alt="BOEHI Logo"></a></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#ffffff">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <!-- Side Drawer -->
+    <div class="side-drawer" id="sideDrawer">
+        <div class="drawer-header">
+            <img class="logo" src="logo.webp" alt="BOEHI Logo">
+            <span class="close-btn" onclick="toggleMenu()">✕</span>
+        </div>
+        <ul class="drawer-links">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleMenu()">About Us</a></li>
+            <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="gallery.html" onclick="toggleMenu()">Gallery</a></li>
+            <li><a href="blog.html" onclick="toggleMenu()">Blog</a></li>
+            
+        </ul>
+    </div>
+
+    <!--Projects -->
+    <section class="projects">
+        <div>
+            <h2>Education Support Program </h2>
+            <h3 class="projects-badge">"Transforming Potential Into Possibility Through Education"</h3>
+            <div class="projects-grid">
+                <div class="img-wrapper">
+                    <img src="images/project1.webp" alt="">
+                </div>
+                <div class="text-box">
+                    At the heart of BOEHI’s mission is the belief that education is the most powerful equalizer in
+                    society.
+                    Our Education Support Program is a multi-tiered intervention designed to bridge the gap between
+                    ambition
+                    and access for underserved children and youth in Nigeria. <br>
+
+                    We provide:
+                    <ul>
+                        <li>Full and partial scholarships for primary, secondary, and tertiary education</li>
+                        <li>School essentials including uniforms, books, writing materials, shoes, and bags</li>
+                        <li>Mentorship and psychosocial support, pairing students with trained adult role models who
+                            guide
+                            them
+                            through life’s academic and emotional challenges</li>
+                    </ul>
+                    <br>
+                    Through targeted outreach in rural and low-income urban communities, we identify vulnerable children
+                    who
+                    are most at risk of dropping out due to poverty, conflict, or marginalization—especially girls and
+                    orphans. <br>
+                    This program not only sends children to school, but keeps them there by addressing barriers
+                    holistically. Our graduates are emerging as teachers, entrepreneurs, engineers, and future policy
+                    leaders—proof that given the chance, talent will always rise. <br><br>
+                    <strong>“Education is not a gift—it’s a right. Our role is to unlock it for every child.”<br>
+                        — BOEHI Chairman, Mr. Ade Ayeni</strong>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>Hospitality Skills Training</h2>
+            <h3 class="projects-badge">"Skilling for Service. Building for a Lifetime."</h3>
+            <div class="projects-grid">
+                <div class="img-wrapper">
+                    <img src="images/project2.jpg" alt="">
+                </div>
+
+                <div class="text-box">
+                    BOEHI’s Hospitality Skills Training initiative is designed to equip youth and women with hands-on,
+                    employable skills that immediately translate into income, dignity, and self-reliance. <br>
+
+                    We operate through training hubs and partner institutions offering professional certification in:
+                    <br>
+                    <ul>
+                        <li>Catering and Culinary Arts</li>
+                        <li>Housekeeping and Room Service</li>
+                        <li>Hotel Management and Front Desk Operations</li>
+                        <li>Event Planning and Protocol Services</li>
+                    </ul>
+                    Our program goes beyond classroom learning. Trainees engage in: <br>
+                    <ul>
+                        <li>Live practice sessions in real hospitality settings</li>
+                        <li>Soft skills development (customer service, time management, communication)</li>
+                        <li>Linkages to internships, job placements, and microenterprise startup kits</li>
+                    </ul>
+                    <br>
+                    By focusing on industries that are labour-intensive and locally sustainable, we reduce unemployment,
+                    especially among young women and school leavers. Graduates emerge with globally transferable skills
+                    and
+                    the confidence to thrive in hospitality careers or run their own service-based businesses.
+                    <br>
+                    <strong>“In every hotel or banquet hall is a young person whose life changed because someone
+                        believed in
+                        their
+                        potential.” <br>— Program Coordinator, BOEHI Skills Hub</strong>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h2>Youth & Women Empowerment</h2>
+            <h3 class="projects-badge">"Empowering the Pillars of Tomorrow’s Communities"</h3>
+            <div class="projects-grid">
+                <div class="img-wrapper">
+                    <img src="images/project3.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    This flagship initiative aims to liberate potential
+                    trapped by poverty, gender inequality, and lack of opportunity. BOEHI’s Youth and Women Empowerment
+                    Program is not charity—it is investment in resilience, ingenuity, and the ripple effect of empowered
+                    leadership. <br>
+
+                    What we offer:
+                    <ul>
+                        <li>Microgrants to kick-start income-generating ventures (tailoring, beauty, farming, mobile
+                            food
+                            services,
+                            etc.)</li>
+                        <li>Entrepreneurship bootcamps focused on business planning, market access, and financial
+                            literacy</li>
+                        <li>Leadership and civic engagement training to help women and youth serve as change agents in
+                            their
+                            communities</li>
+                    </ul><br>
+                    This program especially targets:
+                    <ul>
+                        <li>Young mothers rebuilding after loss or hardship</li>
+                        <li>Unemployed youth who are creative but under-resourced</li>
+                        <li>Women with no formal education but with informal business ideas</li>
+                    </ul>
+                    <br>
+                    We prioritize rural outreach, conflict-affected regions, and female-headed households, amplifying
+                    the
+                    voices of those society often overlooks.
+
+                    <br>
+                    <strong>“Empower a woman, and you’ve planted a tree of hope whose roots reach generations.” <br>—
+                        BOEHI
+                        Regional
+                        Field Officer</strong>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2>BOEHI Scholars Network</h2>
+            <h3 class="projects-badge">"From Beneficiaries to Builders of a Better Nation"</h3>
+            <div class="projects-grid">
+                <div class="img-wrapper">
+                    <img src="images/project4.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    The BOEHI Scholars Network is a powerful ecosystem of change—comprising alumni of our education and
+                    skills training programs who are now giving back, mentoring others, and influencing development
+                    discourse. <br>
+
+                    More than a network, it is a living testimony to the long-term impact of empowerment. Members of the
+                    network are involved in:
+                    <ul>
+                        <li>Peer mentoring of new BOEHI recipients</li>
+                        <li>Community service and advocacy projects</li>
+                        <li>Networking events, leadership retreats, and annual summits</li>
+                        <li>Monitoring & Evaluation contributions, helping shape future program design</li>
+                    </ul>
+                    <br>
+
+                    The Network transforms beneficiaries into community builders, role models, and partners in progress.
+                    Whether teaching in classrooms, running startups, or serving in public service, these alumni prove
+                    that
+                    every act of empowerment has a ripple effect. <br>
+                    <strong>
+                        “I was once a child with no books. Today I fund scholarships for others. That’s the BOEHI
+                        difference.”
+                        <br>— Amina O., BOEHI Scholar & Entrepreneur
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Donate Section -->
+    <section class="donate-section" id="donate">
+        <div class="donate-inner">
+            <div class="donate-badge">Make a Difference</div>
+            <h2 class="donate-title">Support Our Mission</h2>
+            <p class="donate-subtitle">Every contribution helps us educate a child, train a youth, and transform a
+                community.</p>
+
+            <div class="donate-card">
+                <div class="donate-icon">🏦</div>
+                <h3>Bank Transfer</h3>
+                <div class="donate-details">
+                    <div class="donate-row">
+                        <span class="donate-label">Account Name</span>
+                        <span class="donate-value">Bode Olajumoke Educational and Hospitality Initiative</span>
+                    </div>
+                    <div class="donate-row">
+                        <span class="donate-label">Account No</span>
+                        <span class="donate-value">1027400459</span>
+                    </div>
+                    <div class="donate-row">
+                        <span class="donate-label">Bank</span>
+                        <span class="donate-value">United Bank of Africa (UBA)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <img src="logo.webp" alt="BOEHI Logo" class="footer-logo">
+                <p class="footer-tagline">Transforming lives through education and impact.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <address>
+                    Senator Bode Olajumoke House,<br>
+                    Engr Amoo Oluwashina Street,<br>
+                    El Shaddai Residential Estate,<br>
+                    Alagbaka GRA, Akure, Nigeria.
+                </address>
+                <p>
+                    <a href="tel:+2348035250222">+234(0) 803 525 0222</a><br>
+                    <a href="tel:+2348037154327">+234(0) 803 715 4327</a><br>
+                    <a href="tel:+2347035047009">+234(0) 703 504 7009</a>
+                </p>
+                <a href="mailto:info@boehifoundation.org">info@boehifoundation.org</a>
+                <a href="mailto:boehieducation@gmail.com">boehieducation@gmail.com</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Twitter/X">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BOEHI Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
