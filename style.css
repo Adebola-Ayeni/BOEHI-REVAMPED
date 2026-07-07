@@ -12,6 +12,13 @@ a {
     color: #004d00;
 }
 
+.gold {
+    color: #daa520;
+}
+.center{
+    text-align: center;
+}
+
 img {
     max-width: 100%;
     height: auto;
