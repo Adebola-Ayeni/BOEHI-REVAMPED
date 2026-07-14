@@ -21,6 +21,7 @@
     <meta property="og:image" content="https://boehi.org/img-preview.webp">
     <meta property="og:url" content="https://boehi.org/gallery/">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 
 <body>
@@ -67,14 +68,18 @@
 
     <div class="gallery-top">
         <h1 class="gold center">Our Gallery</h1>
+        <div class="gallery-filter">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="image">Pictures</button>
+            <button data-filter="video">Videos</button>
+        </div>
         <!-- <h2>Photos and videos from the NBA Akure Branch Law Week, November 9–11, 2025, in honour of Sen. Dr. Bode
             Olajumoke.</h2> -->
     </div>
 
-    <hr width="50%" style="margin: 10px auto;">
 
     <section class="gallery-grid">
-        <div class="card">
+        <div class="card gallery-item" data-type="video">
             <iframe src="https://www.youtube.com/embed/E8QnpGn92v0"
                 title="Church burial Service for MC Olasinmi Akindele Odunmbaku at Chapel Of Christ The Light, Alausa Ikeja"
                 frameborder="0"
@@ -85,7 +90,7 @@
             </span>
         </div>
 
-        <div class="card">
+        <div class="card gallery-item" data-type="video">
             <iframe src="https://www.youtube.com/embed/mmTeaUetubk"
                 title="Emotional moments @ Church burial Service for Mother Celestial Olasinmi Akindele Odunmbaku"
                 frameborder="0"
@@ -97,7 +102,7 @@
 
         </div>
 
-        <div class="card">
+        <div class="card gallery-item" data-type="video">
             <iframe src="https://www.youtube.com/embed/qYy1Mgucotc" loading="lazy"
                 title="FUNERAL SERVICE OF MOTHER CELESTIAL OLASINMI AKINDELE ODUNMBAKU" frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -107,33 +112,33 @@
             </span>
         </div>
 
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img src="/images/gallery/gal1.avif" alt="Dr. Bode Olajumoke being welcomed by NBA Akure Branch Chairman">
             <span>Dr. Bode Olajumoke being welcomed by NBA Akure Branch Chairman, Mr. Onimisi F. Umar, at the Law Week
                 venue in Akure.</span>
         </div>
 
-        <div class="card">
-            <img src="/images/gallery/gal2.avif"
-                alt="Dr. Bode Olajumoke receiving the Grand Patron Award of the NBA Akure Branch.">
+        <div class="card gallery-item" data-type="image">
+            <img src=" /images/gallery/gal2.avif"
+            alt="Dr. Bode Olajumoke receiving the Grand Patron Award of the NBA Akure Branch.">
             <span>Dr. Bode Olajumoke receiving the Grand Patron Award of the NBA Akure Branch.</span>
         </div>
 
-        <div class="card">
-            <img src="/images/gallery/gal3.avif" alt="Chief Femi Fani-Kayode, Guest Speaker, felicitating with Grand Patron honoree Dr. Bode Olajumoke at
+        <div class="card gallery-item" data-type="image">
+            <img src=" /images/gallery/gal3.avif" alt="Chief Femi Fani-Kayode, Guest Speaker, felicitating with Grand Patron honoree Dr. Bode Olajumoke at
                 the NBA Akure Branch Law Week opening ceremony, November 11, 2025.">
             <span>Chief Femi Fani-Kayode, Guest Speaker, felicitating with Grand Patron honoree Dr. Bode Olajumoke at
                 the NBA Akure Branch Law Week opening ceremony, November 11, 2025.</span>
         </div>
 
-        <div class="card">
-            <img src="/images/gallery/gal4.avif"
-                alt="Dr. Bode Olajumoke (81) seated with Chief Sam Amuka-Pemu (91), Vanguard Group Chairman">
+        <div class="card gallery-item" data-type="image">
+            <img src=" /images/gallery/gal4.avif"
+            alt="Dr. Bode Olajumoke (81) seated with Chief Sam Amuka-Pemu (91), Vanguard Group Chairman">
             <span>Dr. Bode Olajumoke (81) seated with Chief Sam Amuka-Pemu (91), Vanguard Group Chairman, who was
                 conferred the Friend of the Bar Award at the Law Week ceremony.</span>
         </div>
 
-        <div class="card">
+        <div class="card gallery-item" data-type="video">
             <iframe src="https://www.youtube.com/embed/0KHLZPVyfuo" loading="lazy"
                 title="80th Birthday: Gov. Aiyedatiwa celebrates Senator Bode Olajumoke" frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -143,7 +148,7 @@
                 Olajumoke as he marks his 80th birthday in grand style.</span>
         </div>
 
-        <div class="card">
+        <div class="card gallery-item" data-type="video">
             <iframe src="https://www.youtube.com/embed/1G4pEHKrJT4" loading="lazy"
                 title="Senator Bode Olajumoke Marks 81st Birthday With Honour" frameborder="0"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -154,93 +159,93 @@
                 associates who honour a lifetime of service to Ondo State and Nigeria.
             </span>
         </div>
-        
+
     </section>
 
 
     <hr width="50%" style="margin: auto;">
 
     <section class="gallery-grid">
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/1.avif" alt="BOEHI Gallery">
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/2.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/3.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/4.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/5.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/6.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/7.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/8.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/9.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/10.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/11.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/12.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/13.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/14.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/15.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/16.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/17.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/18.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/19.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/20.avif" alt="BOEHI Gallery">
 
         </div>
-        <div class="card">
+        <div class="card gallery-item" data-type="image">
             <img loading="lazy" src="/images/gallery/21.avif" alt="BOEHI Gallery">
 
         </div>
@@ -333,8 +338,7 @@
             </p>
         </div>
     </footer>
-
-    <script src="/script.js"></script>
+    <script src="/gallery.js"></script>
 </body>
 
 </html>
